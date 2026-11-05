@@ -9,9 +9,9 @@ mvn --batch-mode clean test
 echo "Building executable JAR..."
 mvn --batch-mode package
 
-jar_file="$(find target -maxdepth 1 -type f -name 'HelloProject-*.jar' | head -n 1)"
-if [[ -z "$jar_file" ]]; then
-  echo "ERROR: No HelloProject JAR was produced." >&2
+jar_file="build/hello.jar"
+if [[ ! -f "$jar_file" ]]; then
+  echo "ERROR: ${jar_file} was not produced." >&2
   exit 1
 fi
 

@@ -33,8 +33,8 @@ Skill налаштовує Maven для Java-проєкту, додає JUnit 5,
 6. Запусти `mvn test`, перевір результат і кількість тестів.
 7. Запусти `mvn package` з успішним проходженням тестів.
 8. Налаштуй manifest із `Main-Class` і переконайся, що `mvn package` формує
-   виконуваний `target/HelloProject-*.jar`. Перевір його командою
-   `java -jar target/HelloProject-*.jar`.
+   виконуваний `build/hello.jar`. Перевір його командою
+   `java -jar build/hello.jar`.
 
 ## Приклад вхідних даних
 
@@ -51,7 +51,7 @@ junitVersion=5.11.0
 - JUnit 5 підключено через Maven dependency.
 - Є тестова функція та JUnit 5 unit-тест.
 - `mvn test` і `mvn package` завершуються з кодом 0.
-- У `target/` створено виконуваний JAR-файл, який запускається через
+- У `build/` створено `hello.jar`, який запускається через
   `java -jar`.
 
 ## Перевірки правильності виконання
@@ -59,7 +59,7 @@ junitVersion=5.11.0
 - Перевір XML-структуру `pom.xml` і відсутність дубльованих dependency/plugin.
 - Перевір фактичне завантаження JUnit 5 і запуск тесту Maven Surefire.
 - Перевір, що помилки компіляції або тестів не замасковані.
-- Перевір наявність JAR-файлу та коректне значення `Main-Class` у manifest.
+- Перевір наявність `build/hello.jar` та коректне значення `Main-Class` у manifest.
 - Збережи короткий результат `mvn test`, `mvn package` і запуску JAR.
 
 ## Типова помилка та обробка
