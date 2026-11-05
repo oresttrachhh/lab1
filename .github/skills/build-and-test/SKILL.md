@@ -14,7 +14,7 @@ Skill налаштовує Maven для Java-проєкту, додає JUnit 5,
 
 ## Вхідні параметри
 
-- `projectRoot` — корінь Java-проєкту з `src/main/java`.
+- `projectRoot` — корінь Git-репозиторію та Java-проєкту з `src/main/java`.
 - `artifactId` — Maven-ідентифікатор, для цього завдання `HelloProject`.
 - `javaVersion` — версія JDK, сумісна з локальним середовищем і CI.
 - `junitVersion` — версія JUnit 5, яку треба зафіксувати в `pom.xml`.

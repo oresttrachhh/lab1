@@ -17,7 +17,7 @@ Windows і `ci.sh` для Linux/macOS.
 
 - `workflowName` — назва workflow, наприклад `HelloProject CI`.
 - `javaVersion` — версія JDK для `actions/setup-java`.
-- `projectRoot` — корінь Maven-проєкту.
+- `projectRoot` — корінь Git-репозиторію та Maven-проєкту.
 - `scriptPaths` — шляхи до `ci.bat` і `ci.sh`; за замовчуванням вони лежать у
   корені репозиторію.
 
